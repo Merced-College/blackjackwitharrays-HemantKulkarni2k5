@@ -95,7 +95,7 @@ void determineWinner(int playerTotal, int dealerTotal) {
     } else {  // Otherwise, dealer wins
         cout << "Dealer wins!" << endl;
     }
-}
+} //added betting function to bet money
 int initializeMoney() {   
     int money;
     std::cout << "How much money do you have?"; 
@@ -105,7 +105,7 @@ int initializeMoney() {
 
     return money;
 }
-
+//function to take in the bet amount the user wants to bet 
 int initializeBet(int & money) { 
     
     int Bet;
@@ -122,7 +122,7 @@ int initializeBet(int & money) {
 
 
 }
-
+//displays how much money we have left after bet
 int finalMoney(int money) {
     printf("You have this much money left: %d\n", money);
     return money;
